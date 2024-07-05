@@ -1,3 +1,9 @@
+/*SETTING*/
+html {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    --light: antiquewhite; 
+}
+
 /*SETUP*/
 
 * {
@@ -48,10 +54,18 @@ div {
 /*MODULES*/
 
 /*MODULES HEADER*/
-
+header {
+    background-color: var(--light);
+}
 /*MODULES FOOTER*/
 
 /*MODULES INDEX.HTML*/
+
+.index-main {
+    background-color: var(--light);
+}
+
+
 
 /*MODULES INDEX.HTML .MAIN-PHOTO*/
 .main-photo {
@@ -60,7 +74,15 @@ div {
 }
 
 /*MODULES INDEX.HTML .MAIN-BIO*/
-
+.main-bio p {
+    text-align: center;          
+    font-size: 24px;              
+    color: white;                
+    font-family: 'Arial', sans-serif; 
+    font-weight: 300;
+    padding-left: 250px;
+    padding-right: 250px;
+}
 /*MODULES BIO.HTML*/
 
 /*MODULES CONTACT.HTML*/
