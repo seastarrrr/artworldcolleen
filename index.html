@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Art World Colleen</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="inner-column">
-                    <div class="title">
-                        <div>Art World Colleen</div> 
-                    </div>   
-                    <nav>
-                        <a href= "">Home</a>
-                        <a href= "">Work</a>
-                        <a href= "">About</a>
-                        <a href= "">Contact</a>
-                    </nav>                 
-            </div>
-        </header>
-        <main class="index-main">
-            <section>
-                <div class="inner-column">
-                    <div class="main-photo">
-                        <picture>
-                            <img src="./images/Opening_Photo_Colleen_Art.jpg" alt="Colleen Miller"> 
-                        </picture>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art World Colleen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="inner-column">
+            <div class="header-container">
+                <div class="header-left">
+                    <a href="index.html" class="header-title">Art World Colleen</a>
                 </div>
-            </section>
-            <section> 
-                <div class="inner-column">
-                    <div class="main-bio">
-                        <p>
-                            Colleen’s works are rooted in the themes of 
-                            love, home,queerness, and connection, prompting 
-                            contemplation of our present relationship with 
-                            ourselves, others, the surrounding world, and the nature 
-                            of reality itself.
-                        </p>
-                    </div>
-
+                <nav class="header-right">
+                    <a href="pages/work.html">Work</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/contact.html">Contact</a>
+                </nav>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="inner-column">
-                <h1>Footer</h1>
             </div>
-        </footer>
-    </body>
+            <div class="mobile-menu">
+                <a href="pages/work.html">Work</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+        </div>               
+    </header>
+    <main class="index-main">
+        <section class="main-photo-section">
+            <div class="inner-column">
+                <div class="main-photo">
+                    <picture>
+                        <img src="./images/Opening_Photo_Colleen_Art.jpg" alt="Colleen Miller">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="inner-column">
+                <div class="main-bio">
+                    <p>
+                        Colleen’s works are rooted in the themes of 
+                        love, home, queerness, and connection, prompting 
+                        contemplation of our present relationship with 
+                        ourselves, others, the surrounding world, and the nature 
+                        of reality itself.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner-column">
+            <h1>Footer</h1>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
