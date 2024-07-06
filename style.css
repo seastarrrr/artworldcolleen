@@ -3,11 +3,14 @@ html {
     font-family: "Helvetica Neue", Arial, sans-serif;
     --light: antiquewhite;
     --dark: rgb(98, 37, 37); 
+    border:none;
 }
 
 /*SETUP*/
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 /*
@@ -19,6 +22,10 @@ section {
     border: 4px solid lime;
 }
 */
+
+header, footer, main, section {
+    border: none;
+}
 img {
     display: block;
     width: 100%;
@@ -178,14 +185,15 @@ footer .inner-column {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
 footer .footer-left, footer .footer-right {
     display: flex;
     align-items: center;
+    gap: 4px;
 }
 
 footer .footer-button {
@@ -229,6 +237,7 @@ main {
 
 .index-main {
     background-color: var(--light);
+    padding: 0px;
 }
 
 /*MODULES INDEX.HTML .MAIN-PHOTO*/
@@ -260,18 +269,44 @@ main {
 }
 
 /*MODULES INDEX.HTML .MAIN-BIO*/
+.main-bio {
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center align the text */
+    background-color: var(--light); /* Example background color */
+    padding: 20px; /* Padding around the container */
+}
+
 .main-bio p {
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Ensure the paragraph behaves like a block but stays inline */
     text-align: center;
     font-size: 24px;
     color: var(--dark);
     font-family: 'Arial', sans-serif;
-    font-weight: 300;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 45px;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 25px;
+    font-size: 25x; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height for readability */
+    font-style: oblique;
+    word-spacing: 2px;
+    letter-spacing: .5px;
     
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+    .inner-column {
+        padding: 10px;    
+    }
+}
+.main-bio p {
+    
+    
+}
+
 
 
 /*MODULES BIO.HTML*/
