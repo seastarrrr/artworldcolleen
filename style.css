@@ -166,6 +166,51 @@ header {
 
 /*MODULES FOOTER*/
 
+footer {
+    background-color: var(--dark);
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .inner-column {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+footer .footer-left, footer .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-button {
+    background-color: transparent;
+    color: var(--light);
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: medium;
+}
+
+footer .footer-button:hover {
+    background-color: var(--light);
+    color: #333;
+}
+
+footer .social-link {
+    margin-left: 10px; /* Adjust spacing between social buttons */
+}
+
+
+
+
 /*MODULES INDEX.HTML*/
 body {
     display: flex;
