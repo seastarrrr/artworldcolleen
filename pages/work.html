@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Art World Colleen</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="inner-column">
-                <div class="header-container">
-                    <div class="header-left">
-                        <a href="index.html" class="header-title">Art World Colleen</a>
-                    </div>
-                    <nav class="header-right">
-                        <a href="pages/work.html">Work</a>
-                        <a href="pages/about.html">About</a>
-                        <a href="pages/contact.html">Contact</a>
-                    </nav>
-                    <div class="menu-toggle">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art World Colleen - Gallery</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="inner-column">
+            <div class="header-container">
+                <div class="header-left">
+                    <a href="../index.html" class="header-title">Art World Colleen</a>
                 </div>
-                <div class="mobile-menu">
-                    <a href="pages/work.html">Work</a>
-                    <a href="pages/about.html">About</a>
-                    <a href="pages/contact.html">Contact</a>
+                <nav class="header-right">
+                    <a href="../pages/work.html">Work</a>
+                    <a href="../pages/bio.html">About</a>
+                    <a href="../pages/contact.html">Contact</a>
+                </nav>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-            </div>               
-        </header>
-        <main>
-            <section>
-                <div class="inner-column">
-                    <h1>Work</h1>
-                </div>
-        </main>
-        <footer>
-            <div class="inner-column">
-                <h1>Footer</h1>
             </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            <div class="mobile-menu">
+                <a href="../pages/work.html">Work</a>
+                <a href="../pages/bio.html">About</a>
+                <a href="../pages/contact.html">Contact</a>
+            </div>
+        </div>               
+    </header>
+    <main class="work-main">
+        <section>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/Porching.jpg" alt="Artwork 1" data-full="../images/Porching.jpg">
+                    <div class="image-title">Porching</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Dreams_And_Mermaids_Out_of_Water.jpg" alt="Artwork 2" data-full="../images/Dreams_And_Mermaids_Out_of_Water.jpg">
+                    <div class="image-title">Dreams And Mermaids Out of Water</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/I_Wish_I_Was_A_Bumble_Bee_Sailing_Through_The_Air.jpg" alt="Artwork 3" data-full="../images/I_Wish_I_Was_A_Bumble_Bee_Sailing_Through_The_Air.jpg">
+                    <div class="image-title">I Wish I Was A Bumble Bee Sailing Through The Air</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Lay_Lady_Lay.jpg" alt="Artwork 4" data-full="../images/Lay_Lady_Lay.jpg">
+                    <div class="image-title">Lay Lady Lay</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Sea_Reflection.jpg" alt="Artwork 5" data-full="../images/Sea_Reflection.jpg">
+                    <div class="image-title">Sea Reflection</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Sothern_Night_Abstraction.jpg" alt="Artwork 6"data-full="../images/Sothern_Night_Abstraction.jpg">
+                    <div class="image-title">Southern Night Abstraction</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Water_Softness_and_Strength.jpg" alt="Artwork 7" data-full="../images/Water_Softness_and_Strength.jpg">
+                    <div class="image-title">Water Softness and Strength</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Porch_Night.jpg" alt="Artwork 8" data-full="../images/Porch_Night.jpg">
+                    <div class="image-title">Porch Night</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Memory.jpg" alt="Artwork 9" data-full="../images/Memory.jpg">
+                    <div class="image-title">Memory</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/In_The_Pines.jpg" alt="Artwork 10" data-full="../images/In_The_Pines.jpg">
+                    <div class="image-title">In the Pines</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/River_Play.jpg" alt="Artwork 11" data-full="../images/River_Play.jpg">
+                    <div class="image-title">River Play</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/Stability_is_an_Illusion.jpg" alt="Artwork 12" data-full="../images/Stability_is_an_Illusion.jpg">
+                    <div class="image-title">Stability is an Illusion</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner-column">
+            <div class="footer-left">
+                <a href="../index.html" class="footer-button">Art World Colleen</a>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/artworld.colleen/" target="_blank" class="footer-button">Instagram</a>
+                <a href="https://artworldcolleen.substack.com/" target="_blank" class="footer-button">Substack</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
 </html>
